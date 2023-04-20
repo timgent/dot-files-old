@@ -35,9 +35,6 @@ noremap <C-c> "*y
 " Enable mouse wheel scrolling
 set mouse=a
 
-" Elixir Mix format on file save
-let g:mix_format_on_save = 1
-
 "Handy shortcut for clearing search highlighting
 nnoremap <Leader><Leader> :noh<return>
 
@@ -134,8 +131,6 @@ command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
 call plug#begin()
 " Language server support and code navigation
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Auto-format with mix
-Plug 'mhinz/vim-mix-format'
 " Shortcuts to switch panes Ctrl+h/j/k/l
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'troydm/zoomwintab.vim'
