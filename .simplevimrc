@@ -1,0 +1,40 @@
+" General Vim config
+" ------------------
+" Use space as the '<Leader>' because that's easier than \
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+
+" Use jk to exit insert mode
+:inoremap jk <esc>
+:inoremap Jk <esc>
+:inoremap jK <esc>
+:inoremap JK <esc>
+
+" Sets where splits are created to something sensible
+set splitbelow
+set splitright
+
+" Something to do with auto-indenting?
+filetype plugin indent on
+" Show line numbers
+set number
+set signcolumn=auto
+" On pressing tab, insert 2 spaces
+set expandtab
+" show existing tab with 2 spaces width
+set tabstop=2
+set softtabstop=2
+" when indenting with '>', use 2 spaces width
+set shiftwidth=2
+
+" Ctrl-c copying to clipboard for highlighted text
+noremap <C-c> "*y
+
+" Enable mouse wheel scrolling
+set mouse=a
+
+"Handy shortcut for clearing search highlighting
+nnoremap <Leader><Leader> :noh<return>
+
+"Shortcut for copying the file name
+:nmap cp :let @*=@%<cr>
