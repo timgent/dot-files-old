@@ -10,6 +10,10 @@ let mapleader=" "
 :inoremap jK <esc>
 :inoremap JK <esc>
 
+" Shortcuts for switching tabs
+nnoremap H gT
+nnoremap L gt
+
 " Sets where splits are created to something sensible
 set splitbelow
 set splitright
